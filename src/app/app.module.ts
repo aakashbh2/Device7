@@ -4,7 +4,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { NewsLetterComponent } from './newsletter/newsletter.component';
+import { HomePageComponent } from './homepage/homepage.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppServices } from './appServices';
 
@@ -12,7 +12,7 @@ import { AppServices } from './appServices';
   declarations: [
     AppComponent,
     HeaderComponent,
-    NewsLetterComponent,
+    HomePageComponent,
     FooterComponent
   ],
   imports: [

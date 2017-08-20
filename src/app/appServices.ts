@@ -6,15 +6,12 @@ import 'rxjs/add/operator/catch'
 
 @Injectable()
 export class AppServices{
-result:any;
     constructor(private http: Http) {
     }
 
-    getJSON(): Observable<any> {
-         this.result = this.http.get("assets/data.json")
-                         .map((res:any) => res.json());
-                         // .catch((error:any) => error);
-        console.log("now here",Observable.of(this.result));
-        return Observable.of(this.result);
+    getTopArticles(): Observable<any> {
+         return this.http.get("assets/data.json")
+                         .map((res:any) => res.json())
+                         .catch((error:any) => error);
 		}
 }
