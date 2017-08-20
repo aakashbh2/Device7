@@ -1,0 +1,29 @@
+<nav class="navbar navbar-inverse navbar-fixed-top " style="background-color: #e5d80e;">
+    <div class="container-fluid">
+        <div class="navbar-header">
+                <button type="button" 
+                        class="navbar-toggle collapsed middle"
+                        (click)="toggleState()">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#">
+                <img src="/assets/logo.png" width="200" height="100" class="inline-block align-top image" alt="">
+                </a>
+        </div>
+         <div class="collapse navbar-collapse"
+              [ngClass]="{ 'in': isIn }">
+            <ul class="nav navbar-nav ">
+                <li><a href="#"><strong>Blog</strong></a></li>
+                <li><a href="#"><strong>Computers & Technology</strong></a></li>
+                <li><a href="#"><strong>Health & Beauty</strong></a></li>
+                <li><a href="#"><strong>Sports & Outdoors</strong></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+   
+   
