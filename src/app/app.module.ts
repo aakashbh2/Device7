@@ -6,18 +6,25 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomePageComponent } from './homepage/homepage.component';
 import { FooterComponent } from './footer/footer.component';
+
+import { ComparisonComponent } from './comparision-content/comparison.component';
+
 import { AppServices } from './appServices';
+import { RouterModule } from '@angular/router';
+import { routes } from './app.routes';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomePageComponent,
-    FooterComponent
+    FooterComponent,
+    ComparisonComponent
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot(routes),
   ],
   providers: [AppServices],
   bootstrap: [AppComponent]

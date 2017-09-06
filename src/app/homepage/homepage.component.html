@@ -1,18 +1,44 @@
-<body>
-<div class="col-lg-4 col-sm-12 overlay">
-  <div class="margin">
+<body> 
+  <div class="col-lg-4 col-sm-12 overlay">
+    <div class="margin">
       <h1>
         JOIN US FOR THE REVIEWS AND MONTHLY GIVEAWAYS!
       </h1>
-      <hr /><br>
-      <p>
-      Receive the latest in Technology, Beauty, Gadgets and more in our newsletters
+      <hr/><br>
+      <p style = "text-align: center;">
+        Receive the latest in Technology, Beauty, Gadgets and more in our newsletters
       </p>
       <br>
       <form action="#" method="post" name="sign-up">
         <input type="email" class="input" id="email" name="email" placeholder="neha@strence.com" required>
         <input type="submit" class="button" id="submit" value="SIGN UP">
       </form>
+    </div>
   </div>
-</div>
+
+  <h1 class= "margin-top" style="color:black;">
+    <em>TOP REVIEWED PRODUCTS</em>
+  </h1>
+  <div class="row margin-above" *ngFor="let item of data" >
+    <div class="col-sm-6">
+      <div class="card-block">
+        <img class="card-img-top" src={{item.image}} style="padding-left:50px;padding-right: 50px" width="640" alt="Card image cap">
+        <div class="card-block">
+          <p class="card-text" style="color:black; margin-top:15px">{{item.desc}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6" >
+      <div class="card">
+        <img class="card-img-top" src={{item.image2}} style="padding-left:50px;padding-right: 50px" width="640" alt="Card image cap">
+        <div class="card-block">
+          <p class="card-text" style="color:black;margin-top:15px">{{item.desc2}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br>
+  <footer-bar></footer-bar>
+
 </body>

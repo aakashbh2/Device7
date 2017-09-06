@@ -8,12 +8,12 @@ import { AppServices } from '../appServices';
 })
 
 export class HomePageComponent implements OnInit {
-data; 
+  public data; 
 	constructor(private _appServices: AppServices) {
     }
 
 	ngOnInit():void {
- 		this.fetchTopArticles();
+ 		this.data= this.fetchTopArticles();
 	}
 
 	fetchTopArticles(){

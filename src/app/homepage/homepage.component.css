@@ -18,6 +18,15 @@ body {
 margin-bottom: 125px;
 }
 
+.margin-top{
+padding-top: 500px;
+}
+
+.margin-above{
+ margin-top: 45px; 
+}
+
+
 h1 {
   font-size: 35px;
   text-transform: uppercase;
