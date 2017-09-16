@@ -8,6 +8,7 @@ import { HomePageComponent } from './homepage/homepage.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { ComparisonComponent } from './comparision-content/comparison.component';
+import { ReviewComponent } from './review-content/review.component';
 
 import { AppServices } from './appServices';
 import { RouterModule } from '@angular/router';
@@ -19,7 +20,8 @@ import { routes } from './app.routes';
     HeaderComponent,
     HomePageComponent,
     FooterComponent,
-    ComparisonComponent
+    ComparisonComponent,
+    ReviewComponent
   ],
   imports: [
     BrowserModule,
