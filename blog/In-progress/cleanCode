@@ -1,0 +1,14 @@
+We have deadlinesand outcome of this is dirty code coz we rush to go faster, but what happens if we go slower. Lets find out.
+Studies have shown us that ratio of reading code to writing is 10:1 whch means people are spending most of the time scrolling up and down the code looking for something,
+Thus if you make your code easier to read, you will make it easier to write.
+
+**QUOTE**
+
+So here are 10 tips to improve the quality of your code
+1. You are responsible for the quality of code. Follow professional architecture. To be treated like professional we have to behalf like one
+2. While writing a code use meaning full names. 
+3. Often we write comments coz code is not eaasily understandable, but we don't maintaine it causing issues, hence our methods should be self explanaatory
+4. Leave the playgriund better thn you found it. Take some time out and clean the code so that every time the code gets cleaner and cleaner.
+5. Write more unit tests. Follow TDD.
+
+Practise Practise  Practise 
