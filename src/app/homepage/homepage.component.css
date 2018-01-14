@@ -1,29 +1,29 @@
-body {  
+body {
   color: #FDFCFB;
-  position: absolute; 
-  top: 50px; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  margin: auto; 
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
   min-width: 50%;
   min-height: 50%;
   background-size: cover;
   background-position: center;
   background-image: url('../../assets/background.png');
-  
+
 }
 
 .margin{
 margin-bottom: 125px;
 }
 
-.margin-top{
-padding-top: 500px;
+.marginTop{
+padding-top: 650px;
 }
 
 .margin-above{
- margin-top: 45px; 
+ margin-top: 45px;
 }
 
 
@@ -34,7 +34,7 @@ h1 {
   text-align: center;
   margin-top: 200px;
   margin-right: 50px;
-  margin-left: 50px; 
+  margin-left: 50px;
 }
 
 hr {
@@ -42,12 +42,12 @@ hr {
   height: 1px;
   background-color: #FFFFFF;
   border: none;
-  margin-left: 85px; 
+  margin-left: 85px;
 }
 
 p {
   margin-right: 100px;
-  margin-left: 100px; 
+  margin-left: 100px;
   padding: 5px 0;
   font-size: 14px;
   letter-spacing: 1px;
@@ -56,24 +56,24 @@ p {
 
 form {
   margin-right: 100px;
-  margin-left: 100px; 
+  margin-left: 100px;
   display: flex;
   align-items: center;
 }
 
 .overlay {
-  position: center; 
-  
+  position: center;
+
   min-width: 100%;
   min-height: 100%;
   display: flex;
 
   justify-content: center;
   align-items: center;
-  
+
   background-color: rgba(0, 0, 0, .7);
-  
-  padding: 0px 30px 30px 30px;  
+
+  padding: 0px 30px 30px 30px;
   border-radius: 5px 5px 5px 5px;
 }
 
@@ -100,6 +100,6 @@ form {
   font-family: inherit;
   font-weight: bold;
   color: inherit;
-  letter-spacing: 1px; 
+  letter-spacing: 1px;
   cursor: pointer;
 }

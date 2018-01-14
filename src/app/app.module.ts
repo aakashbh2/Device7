@@ -9,6 +9,8 @@ import { FooterComponent } from './footer/footer.component';
 
 import { ComparisonComponent } from './comparision-content/comparison.component';
 import { ReviewComponent } from './review-content/review.component';
+import { OurDetailsComponent } from './our-details/our-details.component';
+import { MostViewedArticlesComponent } from './most-viewed/most-viewed.component';
 
 import { AppServices } from './appServices';
 import { RouterModule } from '@angular/router';
@@ -21,7 +23,9 @@ import { routes } from './app.routes';
     HomePageComponent,
     FooterComponent,
     ComparisonComponent,
-    ReviewComponent
+    ReviewComponent,
+    OurDetailsComponent,
+    MostViewedArticlesComponent
   ],
   imports: [
     BrowserModule,

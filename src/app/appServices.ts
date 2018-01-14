@@ -10,7 +10,7 @@ export class AppServices{
     }
 
     getTopArticles(): Observable<any> {
-         return this.http.get("assets/data.json")
+         return this.http.get("../assets/data.json")
                          .map((res:any) => res.json())
                          .catch((error:any) => error);
 		}
