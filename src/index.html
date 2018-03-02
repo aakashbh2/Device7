@@ -1,14 +1,155 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Strence</title>
-  <base href="/">
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<meta charset="utf-8">
+	<title>Strence</title>
+  <base href="/">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+	<!-- Libs CSS -->
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/css/ionicons.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,300,200,600,600italic,700">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic">
+
+	<!--[if lt IE 9]>
+		<script src="./js/html5shiv.js"></script>
+		<script src="./js/respond.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+
 </head>
-<body>
-  <app-root></app-root>
+<style>
+/* ==========================================================================
+	Loader
+ ========================================================================== */
+
+.loader{ background-color: rgba(0,0,0,0.95); height: 100%; width: 100%; position: fixed; z-index: 999; margin-top: 0px; top: 0px;}
+.loader-centered { position: absolute; left: 50%; top: 50%; height: 200px; width: 200px; margin-top: -100px; margin-left: -100px;}
+.object{ width: 50px; height: 50px; background-color: rgba(255,255,255,0); margin-right: auto; margin-left: auto; border: 4px solid #FFF; left: 73px; top: 73px; position: absolute;}
+
+.square-one {-webkit-animation: first_object_animate 1s infinite ease-in-out; animation: first_object_animate 1s infinite ease-in-out;}
+.square-two {-webkit-animation: second_object 1s forwards, second_object_animate 1s infinite ease-in-out; animation: second_object 1s forwards, second_object_animate 1s infinite ease-in-out; }
+.square-three {-webkit-animation: third_object 1s forwards, third_object_animate 1s infinite ease-in-out; animation: third_object 1s forwards, third_object_animate 1s infinite ease-in-out; }
+
+@-webkit-keyframes second_object {
+	100% { width: 100px; height:100px; left: 48px; top: 48px; }
+}
+@keyframes second_object {
+	100% { width: 100px; height:100px; left: 48px; top: 48px; }
+}
+@-webkit-keyframes third_object {
+	100% { width: 150px; height:150px; left: 23px; top: 23px;}
+}
+@keyframes third_object {
+	100% { width: 150px; height:150px; left: 23px; top: 23px;}
+}
+
+@-webkit-keyframes first_object_animate {
+  0% { -webkit-transform: perspective(100px); }
+  50% { -webkit-transform: perspective(100px) rotateY(-180deg); }
+  100% { -webkit-transform: perspective(100px) rotateY(-180deg) rotateX(-180deg); }
+}
+
+@keyframes first_object_animate {
+	0% {
+		transform: perspective(100px) rotateX(0deg) rotateY(0deg);
+		-webkit-transform: perspective(100px) rotateX(0deg) rotateY(0deg);
+	} 50% {
+		transform: perspective(100px) rotateX(-180deg) rotateY(0deg);
+		-webkit-transform: perspective(100px) rotateX(-180deg) rotateY(0deg) ;
+	} 100% {
+		transform: perspective(100px) rotateX(-180deg) rotateY(-180deg);
+		-webkit-transform: perspective(100px) rotateX(-180deg) rotateY(-180deg);
+	}
+}
+
+@-webkit-keyframes second_object_animate {
+	0% { -webkit-transform: perspective(200px); }
+	50% { -webkit-transform: perspective(200px) rotateY(180deg); }
+	100% { -webkit-transform: perspective(200px) rotateY(180deg) rotateX(180deg); }
+}
+
+
+@keyframes second_object_animate {
+	0% {
+		transform: perspective(200px) rotateX(0deg) rotateY(0deg);
+		-webkit-transform: perspective(200px) rotateX(0deg) rotateY(0deg);
+	} 50% {
+		transform: perspective(200px) rotateX(180deg) rotateY(0deg);
+		-webkit-transform: perspective(200px) rotateX(180deg) rotateY(0deg) ;
+	} 100% {
+		transform: perspective(200px) rotateX(180deg) rotateY(180deg);
+		-webkit-transform: perspective(200px) rotateX(180deg) rotateY(180deg);
+	}
+}
+
+@-webkit-keyframes third_object_animate {
+	0% { -webkit-transform: perspective(300px); }
+	50% { -webkit-transform: perspective(300px) rotateY(-180deg); }
+	100% { -webkit-transform: perspective(300px) rotateY(-180deg) rotateX(-180deg); }
+}
+
+@keyframes third_object_animate {
+	0% {
+		transform: perspective(300px) rotateX(0deg) rotateY(0deg);
+		-webkit-transform: perspective(300px) rotateX(0deg) rotateY(0deg);
+	} 50% {
+		transform: perspective(300px) rotateX(-180deg) rotateY(0deg);
+		-webkit-transform: perspective(300px) rotateX(-180deg) rotateY(0deg) ;
+	} 100% {
+		transform: perspective(300px) rotateX(-180deg) rotateY(-180deg);
+		-webkit-transform: perspective(300px) rotateX(-180deg) rotateY(-180deg);
+	}
+}
+
+/* ==========================================================================
+Scroll To Top
+ ========================================================================== */
+a.scroll-up { display: none; position: fixed; right: 10px; bottom: 10px; padding: 0 10px; border:1px solid #090C0F; text-align: center;  transition: all 150ms ease-in; -webkit-backface-visibility: hidden;}
+a.scroll-up i {color: #090C0F; font-size: 13px; line-height: normal;}
+a.scroll-up:hover,
+a.scroll-up:focus { background: #000; color: #FFF;}
+a.scroll-up:hover i { color: #FFF;}
+
+</style>
+<body data-spy="scroll" data-target=".navigation">
+  <app-root>
+  <div class="loader">
+    <div class="loader-centered">
+      <div class="object square-one"></div>
+      <div class="object square-two"></div>
+      <div class="object square-three"></div>
+    </div>
+  </div>
+  </app-root>
 </body>
+
+<!-- Start Scroll To Top  -->
+<a href="#" class="scroll-up"><i class="ion-android-arrow-up"></i></a>
+<!-- End Scroll To Top  -->
+
+<!-- Start Js Files -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.min.js"></script><!--jQuery is a Javascript library that greatly reduces the amount of code that you must write.-->
+<script type="text/javascript">window.jQuery || document.write('<script src="assets/js/jquery-2.1.0.min.js"><\/script>')</script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script><!--Packed with many functionalies such as carousel slider, responsive attributes, tabs, drop downs, buttons, and many other features-->
+<script src="assets/js/modernizr.min.js" type="text/javascript"></script><!--Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.-->
+<script src="assets/js/jquery.prettyPhoto.js" type="text/javascript" ></script><!-- Script for Lightbox Image  -->
+<script src="assets/js/custom.js" type="text/javascript"></script><!-- Script File containing all customizations  -->
+<!-- End Js Files  -->
+
 </html>

@@ -1,79 +1,68 @@
-h1.header {
-margin-bottom: 100px;
-user-select: none;
-color: #fff;
-text-align: center;
-font-weight: 300; }
-
-
-p {
-font-weight: 1000;
-user-select: none;
-text-align: center;
-color: #fff;
-margin: 0; }
-
-.panel {
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-position: absolute;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-overflow: auto;
-z-index: 999;
-color: #000;
-background-image: url("http://1c8qo82qhp8l334k5o17fkce.wpengine.netdna-cdn.com/wp-content/uploads/2017/06/WE.png");
-background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.01) 2%,#29383E 100%);
-margin-bottom: 100px;
-background-color: #e5d80e; 
+.wrapper{
+  position: relative;
+  clear:both;
+  margin: 0 auto 75px auto;
+  width: 100%;
+  overflow: hidden;
+}
+.top{
+  background: #e5d80e;
+  height: 500px;
+  border-top: 20px solid #e5d80e;
 }
 
-.story {
-	margin-top: 650px;
-	margin-left: 165px;
-	width: 80%;
-	position: center;
-	align-items: center;
-	justify-content: center;
+.top .title {
+  width: 700px;
+	text-align: center;
+  margin: 38px auto 0 auto;
 }
 
-.red-box{
- padding-top:16px;
- padding-bottom:16px;
- color:#fff !important;
- background-color:#f44336!important
+.title h1 {
+  font-size:24px;
+  color:#FFF;
+  font-weight:500;
 }
 
-table{
-  width:100%;
-  table-layout: fixed;
+.content{
+  padding-bottom: 20px;
 }
-.tbl-header{
-  background-color: rgba(255,255,255,0.3);
- }
-.tbl-content{
-  height:300px;
-  margin-top: 0px;
-  border: 1px solid rgba(255,255,255,0.3);
+
+.content .card.first {
+  margin-top: -80px;
 }
-th{
-  padding: 20px 15px;
-  text-align: left;
-  font-weight: 500;
-  font-size: 12px;
-  color: #000;
-  text-transform: uppercase;
+
+.marginTop {
+	margin-top: 80px;
 }
-td{
-  padding: 15px;
-  text-align: left;
-  vertical-align:middle;
-  font-weight: 300;
-  font-size: 12px;
-  color: #000;
-  border-bottom: solid 1px rgba(255,255,255,0.1);
+
+.card{
+  position: relative;
+  background: #fff;
+  padding:50px;
+  width: 1000px;
+  margin: 20px auto 0 auto;
+  box-shadow: 0 2px 4px rgba(100,100,100,.1);
+}
+
+.card h2 {
+  font-size:21px;
+  font-weight:500;
+}
+
+.card h2 a {
+  color:#CC0000;
+  text-decoration:none;
+}
+
+.card .date {
+  color:#9e9e9e;
+  margin-top:10px;
+  font-size:14px;
+}
+
+.card .text {
+  color:#212121;
+  margin-top:20px;
+  font-size:15px;
+  line-height:22px;
 }

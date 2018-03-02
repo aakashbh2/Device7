@@ -1,26 +1,30 @@
-<nav class="navbar navbar-inverse navbar-fixed-top " style="background-color: #e5d80e;">
-    <div class="container-fluid">
-        <div class="navbar-header">
-                <button type="button" 
-                        class="navbar-toggle collapsed middle"
-                        (click)="toggleState()">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="#">
-                <img src="/assets/logo.png" width="200" height="100" class="inline-block align-top image" alt="">
-                </a>
-        </div>
-         <div class="collapse navbar-collapse"
-              [ngClass]="{ 'in': isIn }">
-            <ul class="nav navbar-nav ">
-                <li><a href="#"><strong>Blog</strong></a></li>
-                <li><a href="#"><strong>Computers & Technology</strong></a></li>
-                <li><a href="#"><strong>Health & Beauty</strong></a></li>
-                <li><a href="#"><strong>Sports & Outdoors</strong></a></li>
-            </ul>
-        </div>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- Start Logo / Text -->
+      <a class="navbar-brand text-logo" href="#"><i class="ion-ios-grid-view"></i>LOGO</a>
+      <!-- End Logo / Text -->
     </div>
-</nav> 
+    <!-- Navigation Links -->
+    <div class="navigation navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#top-banner">Btn</a></li>
+        <li><a href="#">Btn</a></li>
+        <li><a href="#">Btn</a></li>
+        <li><a href="#">Btn</a></li>
+        <li>  <a class="btn" data-toggle="modal" data-target="#myModal">
+        Open Modal</a> </li>
+      </ul>
+    </div>
+    <!-- End Navigation Links  -->
+  </div>
+</nav>
+<!-- End Navigation -->

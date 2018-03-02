@@ -10,8 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ComparisonComponent } from './comparision-content/comparison.component';
 import { ReviewComponent } from './review-content/review.component';
 import { OurDetailsComponent } from './our-details/our-details.component';
-import { MostViewedArticlesComponent } from './most-viewed/most-viewed.component';
-
+import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AppServices } from './appServices';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
@@ -25,7 +24,7 @@ import { routes } from './app.routes';
     ComparisonComponent,
     ReviewComponent,
     OurDetailsComponent,
-    MostViewedArticlesComponent
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,

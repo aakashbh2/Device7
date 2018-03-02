@@ -2,13 +2,17 @@
   {
     "image": "https://images.pexels.com/photos/7720/night-animal-dog-pet.jpg?w=1260&h=750&auto=compress&cs=tinysrgb",
     "desc": "20",
+    "name": "aakh",
     "image2": "https://images.pexels.com/photos/7720/night-animal-dog-pet.jpg?w=1260&h=750&auto=compress&cs=tinysrgb",
-    "desc2": "20"
+    "desc2": "20",
+    "name2": "aaka"
   },
   {
     "image": "https://images.pexels.com/photos/7720/night-animal-dog-pet.jpg?w=1260&h=750&auto=compress&cs=tinysrgb",
     "desc": "20",
+    "name": "kash",
     "image2": "https://images.pexels.com/photos/7720/night-animal-dog-pet.jpg?w=1260&h=750&auto=compress&cs=tinysrgb",
-    "desc2": "20"
+    "desc2": "20",
+    "name2": "aash"
   }
 ]

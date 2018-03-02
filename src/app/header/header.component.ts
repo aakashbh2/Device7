@@ -7,9 +7,5 @@ import { Component } from '@angular/core';
 })
 
 export class HeaderComponent{
-	isIn = false;   // store state
-    toggleState() { // click handler
-        let bool = this.isIn;
-        this.isIn = bool === false ? true : false; 
-    }
+
 }
