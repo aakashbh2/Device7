@@ -1,0 +1,27 @@
+.util-m-t-50{
+	margin-top: 50px;
+}
+.util-m-b-50{
+	margin-bottom: 50px;
+	text-align: center;
+}
+.modal-body h4 {
+	border-bottom: 2px solid black;
+	font-weight: 700;
+	font-size: 19px;
+}
+.btn {
+	border-radius: 3px;
+}
+#email_id {
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+.btn-primary {
+	margin-top: 10px;
+	margin-bottom: 25px;
+	background-color: #3598dc;
+	color:white;
+	font-weight: 600;
+	font-size:14px;
+}

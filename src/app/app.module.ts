@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomePageComponent } from './homepage/homepage.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { NewsletterComponent } from './newsletter/newsletter.component';
 import { ComparisonComponent } from './comparision-content/comparison.component';
 import { ReviewComponent } from './review-content/review.component';
 import { OurDetailsComponent } from './our-details/our-details.component';
@@ -24,7 +24,8 @@ import { routes } from './app.routes';
     ComparisonComponent,
     ReviewComponent,
     OurDetailsComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    NewsletterComponent
   ],
   imports: [
     BrowserModule,

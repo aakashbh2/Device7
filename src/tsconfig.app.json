@@ -6,10 +6,6 @@
     "module": "es2015",
     "types": []
   },
-  "styles": [
-        "fonts",
-        "style.css"
-    ],
   "exclude": [
     "test.ts",
     "**/*.spec.ts"

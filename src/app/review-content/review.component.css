@@ -1,68 +1,21 @@
-.wrapper{
-  position: relative;
-  clear:both;
-  margin: 0 auto 75px auto;
-  width: 100%;
-  overflow: hidden;
-}
-.top{
-  background: #e5d80e;
-  height: 500px;
-  border-top: 20px solid #e5d80e;
-}
+@import "../styles/style.css";
+@import "../styles/bootstrap.css";
 
-.top .title {
-  width: 700px;
+.util-m-t-50{
+	margin-top: 50px;
+}
+.util-m-b-50{
+	margin-bottom: 50px;
 	text-align: center;
-  margin: 38px auto 0 auto;
 }
-
-.title h1 {
-  font-size:24px;
-  color:#FFF;
-  font-weight:500;
+.bg-light-red {
+	background-color: #f9e5e5;
+	border: 1px solid #f5baba;
+	color: #000;
 }
-
-.content{
-  padding-bottom: 20px;
+.text-bold {
+	font-weight: 700;
 }
-
-.content .card.first {
-  margin-top: -80px;
-}
-
-.marginTop {
-	margin-top: 80px;
-}
-
-.card{
-  position: relative;
-  background: #fff;
-  padding:50px;
-  width: 1000px;
-  margin: 20px auto 0 auto;
-  box-shadow: 0 2px 4px rgba(100,100,100,.1);
-}
-
-.card h2 {
-  font-size:21px;
-  font-weight:500;
-}
-
-.card h2 a {
-  color:#CC0000;
-  text-decoration:none;
-}
-
-.card .date {
-  color:#9e9e9e;
-  margin-top:10px;
-  font-size:14px;
-}
-
-.card .text {
-  color:#212121;
-  margin-top:20px;
-  font-size:15px;
-  line-height:22px;
+.checked {
+	color: orange;
 }
