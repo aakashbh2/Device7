@@ -3,16 +3,20 @@
     "image": "https://images.pexels.com/photos/7720/night-animal-dog-pet.jpg?w=1260&h=750&auto=compress&cs=tinysrgb",
     "desc": "20",
     "name": "aakh",
+    "url": "https://docs.oracle.com/javase/tutorial/networking/urls/definition.html",
     "image2": "https://images.pexels.com/photos/7720/night-animal-dog-pet.jpg?w=1260&h=750&auto=compress&cs=tinysrgb",
     "desc2": "20",
-    "name2": "aaka"
+    "name2": "aaka",
+    "url2": "https://docs.oracle.com/javase/tutorial/networking/urls/definition.html"
   },
   {
     "image": "https://images.pexels.com/photos/7720/night-animal-dog-pet.jpg?w=1260&h=750&auto=compress&cs=tinysrgb",
     "desc": "20",
     "name": "kash",
+    "url": "https://docs.oracle.com/javase/tutorial/networking/urls/definition.html",
     "image2": "https://images.pexels.com/photos/7720/night-animal-dog-pet.jpg?w=1260&h=750&auto=compress&cs=tinysrgb",
     "desc2": "20",
-    "name2": "aash"
+    "name2": "aash",
+    "url2": "https://docs.oracle.com/javase/tutorial/networking/urls/definition.html"
   }
 ]

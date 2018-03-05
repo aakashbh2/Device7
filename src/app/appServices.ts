@@ -10,8 +10,14 @@ export class AppServices{
     }
 
     getTopArticles(): Observable<any> {
-         return this.http.get("../assets/data.json")
+         return this.http.get("../assets/data/homePage.json")
                          .map((res:any) => res.json())
                          .catch((error:any) => error);
 		}
+
+    fetchFooterNotes(): Observable<any> {
+         return this.http.get("../assets/data/footer-notes.json")
+                         .map((res:any) => res.json())
+                         .catch((error:any) => error);
+    }
 }

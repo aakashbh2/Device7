@@ -1,16 +1,17 @@
 <!-- Top Banner -->
-<section id="top-banner" class="section padding-150 bg-book">
+<section id="top-banner" class="section padding-150 bg-background">
   <div class="bg-overlay"></div>
   <div class="container">
     <div class="row banner-content">
 
       <div class="col-md-10 col-md-offset-1">
-        <h1>Lorem Ipsum is simply text</h1>
-        <h3>for printing and typesetting industry</h3>
+        <h1>JOIN US FOR UNBIASED REVIEWS AND MONTHLY GIVEAWAYS!</h1>
+        <h3>Receive the latest in Technology, Beauty, Gadgets and more in our newsletters.</h3>
         <div class="buttons-group">
           <div class="row">
             <div class="col-md-8 col-md-offset-2 col-xs-12">
               <!-- Footer Form -->
+              <!-- TODO store email from Subscribe list -->
               <form class="bottom-form util-m-t-50" action="#" method="post">
                 <div class="input-group">
                   <input class="form-control bottom-form-input" type="text" name="bottom-email" placeholder="input" required>
@@ -39,42 +40,31 @@
     <!-- Section Title -->
     <div class="row">
       <div class="col-md-10 col-md-offset-1 text-center util-m-b-50">
-        <h1>Lorem Ipsum is simply dummy text</h1>
-        <p>for printing and typesetting industry</p>
+        <h1>TOP REVIEWED PRODUCTS</h1>
       </div>
     </div>
     <!-- End Section Title -->
 
-    <div class="row">
+    <div class="row margintop-50" *ngFor="let item of data">
 
       <!-- Right Column Content -->
-      <div class="col-md-10 intro-features">
+      <div class="col-md-12 intro-features">
         <!-- Main Points Row -->
-        <div class="row col-md-offset-2">
+        <div class="row">
           <div class="col-md-6 intro-feature">
-            <img src="http://via.placeholder.com/500x250" class="img-responsive" />
-            <h5>Lorem ipsum dolor sit amet</h5>
-          </div>
+          <a href="{{item.url}}">
+            <img src={{item.image}} class="img-responsive" />
+            <h4 align="center" style="color:#ed5821">{{item.desc}}</h4>
+          </a>
+        </div>
           <div class="col-md-6 intro-feature">
-            <img src="http://via.placeholder.com/500x250" class="img-responsive" />
-            <h5>Lorem ipsum dolor sit amet</h5>
+            <a href="{{item.url2}}">
+            <img src={{item.image2}} class="img-responsive" />
+            <h4 align="center" style="color:#ed5821">{{item.desc2}}</h4>
+          </a>
           </div>
         </div>
         <!-- End Main Points -->
-
-        <!-- Main Points Row -->
-        <div class="row col-md-offset-2">
-          <div class="col-md-6 intro-feature">
-            <img src="http://via.placeholder.com/500x250" class="img-responsive" />
-            <h5>Lorem ipsum dolor sit amet</h5>
-          </div>
-          <div class="col-md-6 intro-feature">
-            <img src="http://via.placeholder.com/500x250" class="img-responsive" />
-            <h5>Lorem ipsum dolor sit amet</h5>
-          </div>
-        </div>
-        <!-- End Main Points -->
-
 
       </div>
       <!-- End Left Column Content -->

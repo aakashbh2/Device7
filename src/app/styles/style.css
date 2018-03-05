@@ -95,6 +95,7 @@ Classes
 .section {padding: 100px 0; position: relative;}
 
 .margintop-10 {margin-top: 10px;}
+.margintop-50 {margin-top: 50px;}
 
 .paddingbottom-60 {padding-bottom: 60px;}
 .paddingbottom-150 {padding-bottom: 150px;}
@@ -148,11 +149,11 @@ Color Customizations
 /* ==========================================================================
 Backgrounds
 ========================================================================== */
-.stripe {background-image:url(./img/stripe.png);}
-.cartographer {background-image:url(./img/cartographer.png);}
+/* .stripe {background-image:url(./img/stripe.png);}
+.cartographer {background-image:url(./img/cartographer.png);} */
 
-.bg-book {background: url(./img/bg-book.jpg) no-repeat center bottom; background-size: cover;  background-attachment: fixed;}
-.bg-bokeh {background: url(./img/bg-bokeh.jpg) no-repeat center bottom; background-size: cover;  background-attachment: fixed;}
+.bg-background {background: url(../../assets/img/background.png) no-repeat center bottom; background-size: cover;  background-attachment: fixed;}
+.bg-bokeh {background: url(../../assets/img/background.png) no-repeat center bottom; background-size: cover;  background-attachment: fixed;}
 
 /* ==========================================================================
 Gallery

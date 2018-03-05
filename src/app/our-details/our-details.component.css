@@ -1,3 +1,2 @@
-.margin {
-	margin: 100px 10px 50px 20px;
-}
+@import "../styles/style.css";
+@import "../styles/bootstrap.css";
