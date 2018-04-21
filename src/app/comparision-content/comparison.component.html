@@ -1,13 +1,22 @@
+<!-- TODO improve check to show loader. Make it via service -->
+<div class="loader" *ngIf="!showview">
+  <div class="loader-centered">
+    <div class="object square-one"></div>
+    <div class="object square-two"></div>
+    <div class="object square-three"></div>
+  </div>
+</div>
+
 <!-- Introduction -->
-<section id="intro" class="section nopadding-bottom">
+<section id="intro" class="section nopadding-bottom" *ngIf="showview">
   <div class="container">
 
     <!-- Section Title -->
     <div class="row">
       <div class="col-md-12 util-m-b-50 text-center">
-        <h1 >Lorem Ipsum is simply dummy text</h1>
-        <h4 >for printing and typesetting industry</h4>
-        <p > Lorem Ipsum is simply dummy text for printing and typesetting industry</p>
+        <h1>{{data.title}}</h1>
+        <h4>{{data.metaTitle}}</h4>
+        <p>{{data.tags}}</p>
       </div>
     </div>
     <!-- End Section Title -->
@@ -19,63 +28,29 @@
         <!-- Main Points Row -->
         <div class="row ">
           <div class="intro-feature">
-            <img src="http://via.placeholder.com/900x350" class="img-responsive" />
+            <img src={{data.topImage}} class="img-responsive" />
           </div>
-          <p class="text-left"> Lorem Ipsum is simply dummy text for printing and typesetting industry</p>
+          <p class="text-left" [innerHTML]="data.introduction"></p>
         </div>
         <!-- End Main Points -->
 
         <div class="row">
+          <p class="text-left" [innerHTML]="data.miniIntro"></p>
           <div class="well bg-light-red text-bold">
-            <p class="text-left"> Lorem Ipsum is simply dummy text for printing and 	typesetting industry</p>
+            <p class="text-left">{{data.warning}}</p>
           </div>
-          <p class="text-left"> Lorem Ipsum is simply dummy text for printing and typesetting industry</p>
+          <p class="text-left">{{data.tableHeading}}</p>
         </div>
-
 <hr>
 
         <div class="row">
           <table class="table table-striped table-hover">
             <thead>
-              <th> Heading 1 </th>
-              <th> Heading 2 </th>
-              <th> Heading 3 </th>
-              <th> Heading 4 </th>
-              <th> </th>
+              <th *ngFor="let header of data.tableheader; let i = index">{{header}}</th>
             </thead>
-            <tbody>
+            <tbody *ngFor = "let tableValues of data.table">
               <tr>
-                <td> Text 1 </td>
-                <td> Text 1 </td>
-                <td> Text 1 </td>
-                <td> Text 1 </td>
-                <td>
-                  <button type="submit" class="btn btn-primary"> CTA BUTTON</button>
-                </td>
-              </tr>
-              <tr>
-                <td> Text 1 </td>
-                <td> Text 1 </td>
-                <td> Text 1 </td>
-                <td> Text 1 </td>
-                <td>
-                  <button type="submit" class="btn btn-primary"> CTA BUTTON</button>
-                </td>
-              </tr>
-              <tr>
-                <td> Text 1 </td>
-                <td> Text 1 </td>
-                <td> Text 1 </td>
-                <td> Text 1 </td>
-                <td>
-                  <button type="submit" class="btn btn-primary"> CTA BUTTON</button>
-                </td>
-              </tr>
-              <tr>
-                <td> Text 1 </td>
-                <td> Text 1 </td>
-                <td> Text 1 </td>
-                <td> Text 1 </td>
+                <td *ngFor = "let tableData of tableValues"> {{tableData}} </td>
                 <td>
                   <button type="submit" class="btn btn-primary"> CTA BUTTON</button>
                 </td>
@@ -83,51 +58,67 @@
             </tbody>
           </table>
         </div>
-
 <hr>
 
-        <div class="row">
+        <div class="row" *ngFor="let info of data.information">
           <div class="col-md-6">
-            <h3 class="text-left"> Title Text </h3>
-            <p class="text-justify">
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+            <h3 class="text-left"> {{info.name}} </h3>
+            <p class="text-justify" [innerHTML]="info.desc">
             </p>
           </div>
           <div class="col-md-6">
-            <img class="img-responsive" src="http://via.placeholder.com/500x450" />
+            <img class="img-responsive" src="{{info.img}}" />
           </div>
           <div class="col-md-12">
-            <p class="text-justify">
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+            <p class="text-justify" [innerHTML] = "info.additionalInfo">
             </p>
           </div>
         </div>
 
-<hr>
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="text-left"> {{data.summary}}</h3>
+          </div>
+        <div class="col-md-12">
+          <p class="text-justify" [innerHTML]="data.detailedSummary">
+          </p>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="text-left"> {{data.conclusion}} </h3>
+        </div>
+    <div class="col-md-12">
+      <p class="text-justify" [innerHTML]="data.detailedConclusion">
+      </p>
+    </div>
+
+    </div>
+
 
         <div class="row">
-          <h3> Title Text </h3>
+          <h3> {{lowerTable}} </h3>
           <table class="table table-hover">
             <thead>
-              <th>S.No.</th>
-              <th> Heading 1 </th>
-              <th> Heading 2 </th>
-              <th> Heading 3 </th>
-              <th> Heading 4 </th>
+              <th *ngFor="let subheader of data.subtableheader; let i = index">{{subheader}}</th>
             </thead>
-            <tbody>
+            <tbody *ngFor = "let subtableValues of data.subtable">
               <tr>
-                <td> 1 </td>
-                <td>  </td>
-                <td> Lorem Ipsum </td>
-                <td>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
+                <td *ngFor = "let subtableData of subtableValues; let i = index">
+                  <span *ngIf="i !== 3"> {{subtableData}} </span>
+                  <span *ngIf="i === 3">
+                    <span *ngFor="let check of checkedStars(subtableData, 'checked')">
+                      <span class="fa fa-star {{check}}"></span>
+                    </span>
+                    <span *ngFor="let check of checkedStars(5-subtableData, '')">
+                      <span class="fa fa-star"></span>
+                    </span>
+                  </span>
                 </td>
-                <td> Lorem Ipsum </td>
+                <td>
+                  <button type="submit" class="btn btn-primary"> AMAZON</button>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -135,24 +126,8 @@
         <!-- End Left Column Content -->
       </div>
 
-      <div class="col-md-1"></div>
-      <div class="col-md-3">
-        <div class="well">
-          <ol>
-            <li>1. Text is here</li>
-            <li>1. Text is here</li>
-            <li>1. Text is here</li>
-            <li>1. Text is here</li>
-          </ol>
-        </div>
-      </div>
 
-      <div class="col-md-1"></div>
-      <div class="col-md-3">
-        <div class="well">
-          Blank fields are here
-        </div>
-      </div>
+<recent-products [isComparePage]="true"></recent-products>
 
     </div>
   </div>

@@ -5,9 +5,9 @@
     <!-- Section Title -->
     <div class="row">
       <div class="col-md-10 col-md-offset-1 util-m-b-50 text-center">
-        <h1 >Lorem Ipsum is simply dummy text</h1>
-        <h4 >for printing and typesetting industry</h4>
-        <p > Lorem Ipsum is simply dummy text for printing and typesetting industry</p>
+        <h1>{{data.title}}</h1>
+        <h4>{{data.metaTitle}}</h4>
+        <p>{{data.tags}}</p>
       </div>
     </div>
     <!-- End Section Title -->
@@ -19,53 +19,38 @@
         <!-- Main Points Row -->
         <div class="row ">
           <div class="intro-feature">
-            <img src="http://via.placeholder.com/1000x350" class="img-responsive" />
+            <img src="{{data.topImage}}" class="img-responsive" />
           </div>
-          <p class="text-left"> Lorem Ipsum is simply dummy text for printing and typesetting industry</p>
+          <p class="text-left" [innerHTML]="data.introduction"></p>
         </div>
         <!-- End Main Points -->
 
         <div class="row">
+          <p class="text-left" [innerHTML]="data.miniIntro"></p>
           <div class="well bg-light-red text-bold">
-            <p class="text-left"> Lorem Ipsum is simply dummy text for printing and 	typesetting industry</p>
+            <p class="text-left">{{data.warning}}</p>
           </div>
-          <p class="text-left"> Lorem Ipsum is simply dummy text for printing and typesetting industry</p>
+          <p class="text-left">{{data?.extraInfo}}</p>
         </div>
 
         <hr>
 
         <div class="row">
           <div class="col-md-6">
-            <h3 class="text-left"> Title Text </h3>
-            <p class="text-justify">
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
-            </p>
+            <h3 class="text-left"> {{data.summary}} </h3>
+            <p class="text-justify" [innerHTML]="data.detailedSummary"></p>
           </div>
           <div class="col-md-6">
-            <img class="img-responsive" src="http://via.placeholder.com/500x450" />
+            <img class="img-responsive" src="{{data?.otherImage}}" />
           </div>
           <div class="col-md-12">
-            <p class="text-justify">
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
-            </p>
+            <p class="text-justify" [innerHTML]="data.detailedConclusion"></p>
           </div>
         </div>
 
         <hr>
 
-        <div class="row">
-          <h3> Title Text </h3>
-          <div class="well">
-            <ol>
-              <li>1. Lorem ipsum dolor sit amet</li>
-              <li>2. Lorem ipsum dolor sit amet</li>
-              <li>3. Lorem ipsum dolor sit amet</li>
-              <li>4. Lorem ipsum dolor sit amet</li>
-              <li>5. Lorem ipsum dolor sit amet</li>
-              <li>6. Lorem ipsum dolor sit amet</li>
-            </ol>
-          </div>
-        </div>
+        <recent-products [isComparePage]="false"></recent-products>
         <!-- End Left Column Content -->
       </div>
     </div>

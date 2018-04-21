@@ -11,6 +11,7 @@ import { ComparisonComponent } from './comparision-content/comparison.component'
 import { ReviewComponent } from './review-content/review.component';
 import { OurDetailsComponent } from './our-details/our-details.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { RecentComponent } from './recent/recent.component';
 import { AppServices } from './appServices';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
@@ -25,7 +26,8 @@ import { routes } from './app.routes';
     ReviewComponent,
     OurDetailsComponent,
     ContactUsComponent,
-    NewsletterComponent
+    NewsletterComponent,
+    RecentComponent
   ],
   imports: [
     BrowserModule,

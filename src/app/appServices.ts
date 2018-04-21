@@ -20,4 +20,18 @@ export class AppServices{
                          .map((res:any) => res.json())
                          .catch((error:any) => error);
     }
+
+    fetchCompareBlog(id): Observable<any> {
+        let path = "../assets/data/blogs/" + id + ".json";
+         return this.http.get(path)
+                         .map((res:any) => res.json())
+                         .catch((error:any) => error);
+    }
+
+    fetchReviewBlog(id): Observable<any> {
+        let path = "../assets/data/blogs/" + id + ".json";
+         return this.http.get(path)
+                         .map((res:any) => res.json())
+                         .catch((error:any) => error);
+    }
 }

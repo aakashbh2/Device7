@@ -1,0 +1,22 @@
+<!-- Right col -->
+     <div *ngIf="isComparePage" class="col-md-1"></div>
+     <div [ngClass]="{'row': !isComparePage, 'col-md-3': isComparePage}">
+         <h3> Title Text </h3>
+         <div class="well">
+           <ol>
+             <li>1. Lorem ipsum dolor sit amet</li>
+             <li>2. Lorem ipsum dolor sit amet</li>
+             <li>3. Lorem ipsum dolor sit amet</li>
+             <li>4. Lorem ipsum dolor sit amet</li>
+             <li>5. Lorem ipsum dolor sit amet</li>
+             <li>6. Lorem ipsum dolor sit amet</li>
+           </ol>
+         </div>
+     </div>
+
+     <div *ngIf="isComparePage" class="col-md-1"></div>
+     <div *ngIf="isComparePage" class="col-md-3">
+       <div class="well">
+         Blank fields are here
+       </div>
+     </div>

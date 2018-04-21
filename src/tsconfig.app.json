@@ -4,7 +4,13 @@
     "outDir": "../out-tsc/app",
     "baseUrl": "./",
     "module": "es2015",
-    "types": []
+    "types": [],
+    "scripts":[
+        "./src/assets/js/custom.js"
+    ],
+    "styles":[
+      "./src/assets/css/ionicons.css"
+    ]
   },
   "exclude": [
     "test.ts",
